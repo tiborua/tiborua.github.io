@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+body
+{
+    /* font-family: 'Oxygen', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+    text-rendering: optimizeLegibility;
+
+    /*    margin: 0 auto; */
+
+    line-height: 1.5;
+
+    /* margin: 1rem auto 1rem ; */
+    margin: 1rem 1rem;
+
+
+    /* margin: 4em auto 5rem auto; */
+    max-width: 800px;
+
+}
+
+
+html
+{
+    margin-left: calc(100vw - 100%);
+}
+
+a
+{
+    text-decoration: none;
+    /* color: #4c5c68; /1* dark grey ish blue *1/ */
+    color: #777578;
+}
+
+.container
+{
+    background-color: transparent;
+    margin: auto;
+    max-width: 800px;
+}
+
+#about
+{
+    margin-top: 5em;
+}
+
+#projects
+{
+    max-width: 800px;
+}
+
+.item
+{
+    /* up/below spaced more then left/right */
+    margin: 4em 1rem 4rem 1rem;
+}
+
+.bigger
+{
+    font-size: 48px;
+}
+
+.medium
+{
+    font-size: 28px;
+}
+
+.nudge
+{
+    font-size: 24px;
+}
+
+
+
+#splash
+{
+    /* margin-top: 85%; */
+    /* margin-bottom: auto; */
+    line-height: 1.0;
+}
+
+#splash
+{
+    /* center item responsive */
+
+    text-align: center;
+    bottom: 0;
+    height: 170px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#homepage-links
+{
+    margin-top: 2rem;
+}
+/*
+TODO: Make these flexible and change with media type
+Default: mobile
+ */
+.links
+{
+    font-size: 24px;
+    margin-right:  5px;
+    margin-left:   5px;
+}
+
+#navigation.links
+{
+    padding-left: 2rem;
+}
+
+
+
+/* iPad vertical is 768px. Media query set for screens >=768px  */
+@media only screen and (min-width: 768px)
+{
+
+    #about
+    {
+        margin-top: 5em;
+    }
+
+    body
+    {
+        margin: 1rem auto 1rem auto;
+    }
+}
+
+
+
+/* Small desktop starts at 992px. Media query set for screens >=992px */
+
+@media only screen and (min-width: 992px)
+{
+
+    #about
+    {
+        margin-top: 10em;
+    }
+
+    body
+    {
+        margin: 4rem auto 5rem auto;
+    }
+}
+
+#navigation
+{
+    width: 100%;
+    padding-bottom: 3em;
+}
+
+#navigation .links
+{
+    display: block;
+    float: right;
+    /* padding-left: 2rem; */
+}
+
+#navigation .links a
+{
+    font-weight: inherit;
+}
+
+
+#navigation .links:first-of-type
+{
+    float: left;
+    padding-left: 0;
+}
+
+#navigation .links.active .label
+{
+    height: 0;
+    overflow: hidden;
+}
+
+
+p
+{
+    text-indent: 2em;
+    font-size: 18px;
+    /* padding: 30px; */
+}
+
+.contact-info
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+img.social
+{
+    width: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img.proj
+{
+    width: 300px;
+    margin-left: 2.0em;
+}
